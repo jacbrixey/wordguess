@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+font-size: 10px;
+}
+p {
+    font-size: 1.5rem;
+}
+
+/* Game */
+
+.game-container {
+    padding: 20px 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #2AAA8A;
+}
+.figure-container {
+    fill: transparent;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    display: block;
+}
+
+.start-face {
+    display: none;
+}
+
+.lose-face {
+    display: none;
+}
+
+.word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+#wrong-letters p {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#wrong-letters span {
+    font-size: 2rem;
+}
+
+.letter {
+    border-bottom: 3px solid #fffdfd;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 30px;
+    color: black;
+}
+
+.final-msg-container {
+    display: none;
+    text-align: center;
+}
+
+#final-message {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+#letter-error {
+    display: none;
+    color: #ff3333;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#hint p {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+#play-button {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+#play-button:hover {
+    background-color: #a1d3ff;
+}
+
+#start-btn {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+#start-btn:hover {
+    background-color: #a1d3ff;
+}
+
+#userInput {
+    display: none;
+}
+
+#guess {
+    font-size: 1.8rem;
+}
+
+#submit-btn {
+    font-size: 1.9rem;
+    border-radius: 5px;
+}
+
+#score span {
+    font-size: 2rem;
+}
+
+#score .lose {
+    color: #ff3333;
+}
+
+#score .win {
+    color: #62c962;
+}
+.sr-only{
+    font-size: 2rem;
+}
+
+
+/* Header */
+.headings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-heading {
+    font-size: 1.75rem;
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+@media screen and (min-width: 600px) {
+    .page-heading{
+        font-size: 5rem;
+    }
+    .sub-heading{
+        font-size: 3rem;
+    }
+}
+
